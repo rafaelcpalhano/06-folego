@@ -11,6 +11,7 @@ import Plans from "./pages/Plans";
 import Assessments from "./pages/Assessments";
 import Contact from "./pages/Contact";
 import ModalityDetail from "./pages/ModalityDetail";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route path="/planos" element={<Plans />} />
           <Route path="/avaliacoes" element={<Assessments />} />
           <Route path="/contato" element={<Contact />} />
+
+          <Route path="/login" element={<Login />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
