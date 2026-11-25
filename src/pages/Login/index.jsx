@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./login.css";
+import AuthContext from "../../context/AuthContext";
+import { useNavigate } from "react-router"
 
 export default function Login() {
   const [name, setName] = useState("");
+  const {login} = useContext(AuthContext)
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault()
     
+    login(name.trim());
+    navigate("/area-do-aluno");
   }
 
   return (

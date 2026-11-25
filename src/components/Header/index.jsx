@@ -17,6 +17,7 @@ export default function Header() {
         <NavLink to="/avaliacoes">Avaliações</NavLink>
         <NavLink to="/contato">Contato</NavLink>
          <NavLink to="/login">Login</NavLink>
+         <NavLink to="/area-do-aluno">Área do Aluno</NavLink>
       </nav>
     </header>
   );
